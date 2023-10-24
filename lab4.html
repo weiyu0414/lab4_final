@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="lab4.css">
+    <script src="lab4.js"></script>
+</head>
+<body>
+    
+    <table class="table_width" id="tb">
+        <tr>
+            <th class="th_1">Company</th>
+            <th class="th_1">Contact</th>
+            <th class="th_1">Country</th>
+        </tr>
+        <tr>
+            <td class="th_2">90</td>
+            <td class="th_2">60</td>
+            <td class="th_2">80</td>
+        </tr>
+        <tr>
+            <td class="th_2">80</td>
+            <td class="th_2">86</td>
+            <td class="th_2">98</td>
+        </tr>
+    </table>
+    <p>Change the table width</p>
+    <div class="div_continer">
+        <button onclick="table_width('200px')">200px</button>
+        <button onclick="table_width('500px')">500px</button>
+    </div>
+    <p>Change the border and the spacing width</p>
+    <div class="div_continer">
+        <button onclick="tr_border('1')">1px</button>
+        <button onclick="tr_border('10')">10px</button>
+        <button onclick="tr_border('20')">20px</button>
+    </div>
+    <p>Change the table color</p>
+    <div class="div_continer">
+        <button style="background-color: red;" onclick="table_color('red')"></button>
+        <button style="background-color: orange; "onclick="table_color('orange')"></button>
+        <button style="background-color: purple;"onclick="table_color('yellow')"></button>
+        <button style="background-color: green;"onclick="table_color('green')"></button>
+        
+    </div>
+    <button onclick="f()">reset</button>
+</body>
+</html>
